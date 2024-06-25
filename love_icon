@@ -1,0 +1,10 @@
+import numpy as np
+from matplotlib import pyplot as plt
+
+rad = np.linspace(0, 2 * np.pi, 200)
+
+x = np.sin(rad) ** 3
+y = 20 * np.cos(rad) - 10 * np.cos(2 * rad) - 5 * np.cos(3 * rad) - 2 * np.cos(4 * rad)
+
+plt.plot(x, y)
+plt.show()
